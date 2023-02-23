@@ -1,0 +1,32 @@
+.btn {
+  padding: 1.3rem 3rem;
+  border-radius: 1rem;
+  font-family: "Lato", sans-serif;
+  color: $main-gray;
+  display: inline-block;
+}
+
+// PRIMARY
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid $brand-blue;
+  color: $brand-blue;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: $brand-blue;
+    color: $brand-white;
+  }
+}
+
+// SECONDARY
+.btn-secondary {
+  background-color: $brand-blue;
+  color: $brand-white;
+  padding: 2rem 3rem;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #0c7a9b;
+  }
+}

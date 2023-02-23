@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61">
+  <g id="linkedin" transform="translate(-0.455 0.458)">
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="30" cy="30.5" rx="30" ry="30.5" transform="translate(0.455 -0.458)" fill="#e9e9f6"/>
+    <path id="linkedin-2" data-name="linkedin" d="M6.152,25.906V8.427H.342V25.906ZM3.248,6.039A3.029,3.029,0,1,0,3.286,0,3.028,3.028,0,1,0,3.21,6.039h.038Zm6.12,19.867h5.809V16.145a3.977,3.977,0,0,1,.191-1.417A3.18,3.18,0,0,1,18.349,12.6c2.1,0,2.943,1.6,2.943,3.952v9.351H27.1V15.884c0-5.369-2.866-7.867-6.689-7.867a5.786,5.786,0,0,0-5.274,2.945h.039V8.427H9.368c.076,1.64,0,17.479,0,17.479Z" transform="translate(16.318 16.903)" fill="#009bc9"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+header {
+  background-color: $brand-white;
+  padding: 1.5rem 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0.1rem 1rem rgba(#000000, 0.2);
+
+  .container {
+    @include flex(row, space-between, center);
+  }
+
+  .logo {
+    max-width: 19rem;
+  }
+
+  nav {
+    ul {
+      @include flex(row, space-between, center);
+      gap: 2rem;
+      li {
+        a {
+          position: relative;
+          color: $main-gray;
+          padding: 1.8rem 2rem;
+          transition: all 0.2s ease-in;
+          &:hover {
+            background-color: #f5f5fa;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              background-color: $brand-blue;
+              bottom: 0;
+              left: 0;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-color: #fcfcfd;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: $main-gray;
+  font-weight: 700;
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    color: $brand-blue;
+    font-weight: 700;
+  }
+}
+
+// section {
+//   height: 100vh;
+// }

@@ -1,0 +1,14 @@
+{
+  "name": "dropim",
+  "version": "1.0.0",
+  "description": "Plataforma de  dropshipping 100% nacional",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "Francy Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
