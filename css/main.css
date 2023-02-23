@@ -92,8 +92,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem; }
+    align-items: center; }
     header nav ul li a {
       position: relative;
       color: #24242e;
@@ -528,3 +527,129 @@ footer .copy {
   background-color: #f5f5fa; }
   footer .copy span {
     color: #009bc9; }
+
+.pos-hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+
+.pos-hero .mobile-apps-image {
+  position: relative;
+  width: 100%;
+  max-width: 134rem;
+  margin-left: -60rem; }
+
+.pos-hero .text h2 {
+  margin-bottom: 1.6rem; }
+  .pos-hero .text h2 span {
+    display: block; }
+
+.pos-hero .text p {
+  margin-bottom: 3rem; }
+
+.pos-hero .text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3.5rem; }
+  .pos-hero .text ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem; }
+    .pos-hero .text ul li img {
+      width: 100%;
+      max-width: 3rem; }
+    .pos-hero .text ul li p {
+      margin-bottom: 0; }
+
+.integrations {
+  margin-bottom: 14rem; }
+  .integrations h2 {
+    text-align: center;
+    margin-bottom: 8.2rem; }
+  .integrations .sides {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4rem; }
+  .integrations .left ul,
+  .integrations .right ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem; }
+    .integrations .left ul li .text h3,
+    .integrations .right ul li .text h3 {
+      font-family: "Montserrat";
+      font-size: 2rem;
+      font-weight: 600;
+      color: #009bc9;
+      margin-bottom: 1rem; }
+    .integrations .left ul li .text p,
+    .integrations .right ul li .text p {
+      font-family: "Montserrat";
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #4d4d56; }
+  .integrations .left {
+    text-align: right; }
+    .integrations .left ul li {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem; }
+  .integrations .right {
+    text-align: left; }
+    .integrations .right ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem; }
+
+.roi-section {
+  background-color: #009bc9;
+  background: url("../../img/pages/roi-section/background.png") no-repeat;
+  background-size: cover;
+  height: 70rem;
+  color: #fff;
+  padding-top: 5rem;
+  margin-bottom: 20rem; }
+  .roi-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .roi-section h2 {
+    color: #fff;
+    margin-bottom: 6rem;
+    text-align: center; }
+    .roi-section h2 span {
+      text-transform: uppercase;
+      color: #fff;
+      display: block; }
+  .roi-section .content {
+    width: 100%;
+    position: relative; }
+    .roi-section .content p {
+      max-width: 70rem; }
+    .roi-section .content .rocket-image {
+      width: 100%;
+      max-width: 60rem;
+      position: absolute;
+      right: -10rem;
+      top: -12rem; }
+    .roi-section .content .shape-five {
+      position: absolute;
+      right: -34.3rem;
+      bottom: -16.4rem; }
+    .roi-section .content .shape-two {
+      position: absolute;
+      left: -40.3rem;
+      top: -31.4rem; }

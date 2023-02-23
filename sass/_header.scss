@@ -20,7 +20,6 @@ header {
   nav {
     ul {
       @include flex(row, space-between, center);
-      gap: 2rem;
       li {
         a {
           position: relative;

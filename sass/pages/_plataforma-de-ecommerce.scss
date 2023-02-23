@@ -1,0 +1,152 @@
+// POS HERO
+.pos-hero {
+  .container {
+    @include flex(row, space-between, center);
+    position: relative;
+  }
+
+  .mobile-apps-image {
+    position: relative;
+    width: 100%;
+    max-width: 134rem;
+    margin-left: -60rem;
+  }
+
+  .text {
+    h2 {
+      margin-bottom: 1.6rem;
+      span {
+        display: block;
+      }
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+    ul {
+      @include flex(column, space-between, start);
+      gap: 3.5rem;
+      li {
+        @include flex(row, space-between, start);
+        gap: 2rem;
+        img {
+          width: 100%;
+          max-width: 3rem;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// INTEGRATIONS
+.integrations {
+  margin-bottom: 14rem;
+  h2 {
+    text-align: center;
+    margin-bottom: 8.2rem;
+  }
+  .sides {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4rem;
+  }
+
+  .left,
+  .right {
+    ul {
+      @include flex(column, space-between, center);
+      gap: 8rem;
+      li {
+        .text {
+          h3 {
+            font-family: "Montserrat";
+            font-size: 2rem;
+            font-weight: 600;
+            color: $brand-blue;
+            margin-bottom: 1rem;
+          }
+          p {
+            font-family: "Montserrat";
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $text-gray;
+          }
+        }
+      }
+    }
+  }
+  .left {
+    text-align: right;
+
+    ul {
+      li {
+        @include flex(row-reverse, space-between, center);
+        gap: 4rem;
+      }
+    }
+  }
+  .right {
+    text-align: left;
+    ul {
+      li {
+        @include flex(row, space-between, center);
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+// ROI SECTION
+.roi-section {
+  background-color: $brand-blue;
+  background: url("../../img/pages/roi-section/background.png") no-repeat;
+  background-size: cover;
+  height: 70rem;
+  color: $brand-white;
+  padding-top: 5rem;
+  margin-bottom: 20rem;
+
+  .container {
+    @include flex(column, space-between, center);
+  }
+
+  h2 {
+    color: $brand-white;
+    margin-bottom: 6rem;
+    text-align: center;
+    span {
+      text-transform: uppercase;
+      color: $brand-white;
+      display: block;
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    position: relative;
+    p {
+      max-width: 70rem;
+    }
+
+    .rocket-image {
+      width: 100%;
+      max-width: 60rem;
+      position: absolute;
+      right: -10rem;
+      top: -12rem;
+    }
+    .shape-five {
+      position: absolute;
+      right: -34.3rem;
+      bottom: -16.4rem;
+    }
+    .shape-two {
+      position: absolute;
+      left: -40.3rem;
+      top: -31.4rem;
+    }
+  }
+}
