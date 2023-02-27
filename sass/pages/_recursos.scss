@@ -1,0 +1,83 @@
+.resources {
+  margin: 10rem 0;
+  .container {
+    @include flex(column, space-between, center);
+    gap: 10rem;
+  }
+
+  .resource-item {
+    @include flex(row, space-between, start);
+    gap: 4rem;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    .resource-item-image {
+      width: 100%;
+      max-width: 70rem;
+      height: 30rem;
+      object-fit: cover;
+    }
+
+    .text {
+      h3 {
+        color: $brand-blue;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 1.5rem;
+        color: $text-gray;
+        margin-bottom: 2rem;
+      }
+      ul {
+        @include flex(row, start, center);
+        flex-wrap: wrap;
+
+        li {
+          @include flex(row, space-between, center);
+          gap: 1rem;
+          padding: 2rem;
+          padding-left: 0;
+
+          img {
+            width: 100%;
+            max-width: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// PAGE INTEGRAÇÕES, ANTIFRAUDE
+.payments,
+.antifraude,
+.erp,
+.atendimento,
+.logistica-entrega,
+.emails,
+.reviews {
+  margin-top: 4rem;
+  text-align: center;
+  .container {
+    @include flex(column, space-between, center);
+  }
+  h2 {
+    text-transform: uppercase;
+    color: $brand-blue;
+    margin-bottom: 4rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100rem;
+    color: #4d4d56;
+    font-family: "Montserrat Alternates";
+  }
+  .logos {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+}
