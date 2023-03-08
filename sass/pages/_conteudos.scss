@@ -1,20 +1,20 @@
-.resources {
+.conteudos {
   margin: 10rem 0;
   .container {
     @include flex(column, space-between, center);
     gap: 10rem;
   }
 
-  .resource-item {
+  .conteudo-item {
     @include flex(row, space-between, start);
     gap: 4rem;
     &.reverse {
       flex-direction: row-reverse;
     }
-    .resource-item-image {
+    .conteudo-item-image {
       width: 100%;
-      max-width: 70rem;
-      height: 30rem;
+      max-width: 65rem;
+      height: 35rem;
       object-fit: cover;
     }
 
@@ -70,72 +70,6 @@
           font-size: 2rem;
           margin-bottom: 2.5rem;
         }
-      }
-    }
-  }
-}
-
-// PAGE INTEGRAÇÕES, ANTIFRAUDE
-.payments,
-.antifraude,
-.erp,
-.atendimento,
-.logistica-entrega,
-.emails,
-.reviews {
-  margin-top: 4rem;
-  text-align: center;
-  .container {
-    @include flex(column, space-between, center);
-  }
-  h2 {
-    text-transform: uppercase;
-    color: $brand-blue;
-    margin-bottom: 4rem;
-  }
-  p {
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 100rem;
-    color: #4d4d56;
-    font-family: "Montserrat Alternates";
-  }
-  .logos {
-    @include flex(row, center, center);
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-  }
-}
-
-// PAGE MOBILE APP
-
-.mobile-app {
-  @include flex(row, center, center);
-  gap: 5rem;
-  margin-top: -15rem;
-  .text {
-    width: 100%;
-    max-width: 46.5rem;
-    text-align: right;
-    h2 {
-      color: $brand-blue;
-      margin-bottom: 2rem;
-    }
-  }
-  ul {
-    @include flex(column, start, start);
-    width: 100%;
-    max-width: 46.5rem;
-
-    li {
-      @include flex(row, space-between, center);
-      gap: 1rem;
-      padding: 2rem;
-      padding-left: 0;
-
-      img {
-        width: 100%;
-        max-width: 2.5rem;
       }
     }
   }

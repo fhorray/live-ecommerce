@@ -26,20 +26,52 @@ header {
           color: $main-gray;
           padding: 1.8rem 2rem;
           transition: all 0.2s ease-in;
+          display: block;
           &:hover {
             background-color: #f5f5fa;
-            &::after {
-              content: "";
-              width: 100%;
-              height: 2px;
-              background-color: $brand-blue;
-              bottom: 0;
-              left: 0;
-              position: absolute;
+            // &::after {
+            //   content: "";
+            //   width: 100%;
+            //   height: 2px;
+            //   background-color: $brand-blue;
+            //   bottom: 0;
+            //   left: 0;
+            //   position: absolute;
+            // }
+          }
+        }
+      }
+    }
+  }
+  // SUBMENU
+  .submenu {
+    position: relative;
+    width: 100%;
+    &-list {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 1.6rem;
+      ul {
+        @include flex(row, center, start);
+        gap: 4rem;
+        padding: 2rem 0;
+        background-color: $brand-blue;
+        li {
+          a {
+            color: $brand-white;
+            padding: 2rem 2rem;
+            transition: all 0.2s ease-in;
+            &:hover {
+              background-color: #00a6d8;
             }
           }
         }
       }
     }
+  }
+
+  .submenu-hidden {
+    display: none;
   }
 }
