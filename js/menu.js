@@ -25,3 +25,19 @@ menuHeaderItem.forEach((item) => {
 menuItem.forEach((item) => {
   item.addEventListener("mouseleave", closeMenu);
 });
+
+// MENU MOBILE
+$(document).ready(function () {
+  $(".menu-hamburguer").click(function () {
+    $(this).toggleClass("active");
+    $(".js-menu-header").toggleClass("active");
+    $(".menu-contacts").toggleClass(".menu-contacts-active");
+
+    // const menuImage = $(".menu-hamburguer");
+    // if (menuImage.attr("src") === "../../img/menu-hamburguer.svg") {
+    //   menuImage.attr("src", "../../img/close.svg");
+    // } else {
+    //   menuImage.attr("src", "../../img/menu-hamburguer.svg");
+    // }
+  });
+});

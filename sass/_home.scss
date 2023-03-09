@@ -43,6 +43,47 @@
   .hero-image {
     max-width: 48rem;
   }
+
+  @include responsive(1000px) {
+    .container {
+      img {
+        max-width: 40rem;
+      }
+    }
+
+    .text {
+      h1 {
+        font-size: 4.5rem;
+        span {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+  @include responsive(830px) {
+    height: initial;
+    padding-top: 15rem;
+    .container {
+      flex-direction: column;
+      img {
+        margin-top: 5rem;
+      }
+    }
+  }
+  @include responsive(490px) {
+    .text {
+      h1 {
+        font-size: 3.5rem;
+        span {
+          font-size: 3.5rem;
+        }
+      }
+      .cta-area {
+        width: 100%;
+        @include flex(column, space-between, center);
+      }
+    }
+  }
 }
 
 // CASES SECTION
@@ -55,9 +96,10 @@
   }
 
   .stores {
-    @include flex(row, space-between, center);
+    @include flex(row, center, center);
     gap: 5rem;
     margin-bottom: 7rem;
+    flex-wrap: wrap;
     li {
       img {
         filter: grayscale(100%);
@@ -65,6 +107,8 @@
         -moz-filter: grayscale(100%);
         transition: all 0.2s ease-in;
         cursor: pointer;
+        width: 100%;
+        max-width: 15rem;
       }
       &:hover img {
         filter: grayscale(0%);
@@ -80,6 +124,7 @@
     gap: 2rem;
     li {
       border-radius: 2rem;
+
       .cards-item {
         @include flex(column, space-between, start);
         gap: 2rem;
@@ -113,6 +158,14 @@
       }
     }
   }
+
+  @include responsive(800px) {
+    margin-bottom: 5rem;
+
+    .cards {
+      flex-direction: column;
+    }
+  }
 }
 
 // OUR PLATFORM SECTION
@@ -120,7 +173,7 @@
   margin-bottom: 15.5rem;
   .container {
     @include flex(row, space-between, center);
-    // gap: 10rem;
+    gap: 10rem;
   }
   .images {
     width: 46.6rem;
@@ -196,6 +249,29 @@
       max-width: 65rem;
     }
   }
+
+  @include responsive(830px) {
+    .container {
+      @include flex(column-reverse, space-between, center);
+      gap: 5rem;
+    }
+
+    .text {
+      ul {
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @include responsive(400px) {
+    .text {
+      text-align: center;
+      ul {
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+      }
+    }
+  }
 }
 
 // CATEGORIES
@@ -208,7 +284,7 @@
     gap: 4rem;
   }
   .categorie-container {
-    @include flex(row, start, center);
+    @include flex(row, center, center);
     gap: 2.5rem;
     flex-wrap: wrap;
     &-item {
@@ -242,6 +318,10 @@
         font-size: 1.6rem;
       }
     }
+  }
+
+  @include responsive(830px) {
+    margin-bottom: 5rem;
   }
 }
 
@@ -285,7 +365,8 @@
   }
 
   .video-area {
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     height: 36.7rem;
     position: relative;
     .video-cover {
@@ -311,6 +392,13 @@
       position: absolute;
       top: 15rem;
       left: -2rem;
+    }
+  }
+
+  @include responsive(830px) {
+    .container {
+      flex-direction: column;
+      gap: 10rem;
     }
   }
 }
@@ -365,13 +453,21 @@
       }
     }
   }
+
+  @include responsive(830px) {
+    .container {
+      form {
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 // TESTIMONIALS
 .testimonials {
   margin-bottom: 10rem;
   background-color: $light-gray;
-  padding: 15rem;
+  padding: 10rem 0;
   .container {
     @include flex(column, space-between, center);
   }
@@ -431,6 +527,13 @@
       }
     }
   }
+
+  @include responsive(830px) {
+    margin-bottom: 5rem;
+    ul {
+      flex-direction: column;
+    }
+  }
 }
 
 // FOOTER
@@ -474,6 +577,13 @@ footer {
     background-color: $light-gray;
     span {
       color: $brand-blue;
+    }
+  }
+
+  @include responsive(830px) {
+    .menus {
+      text-align: center;
+      @include flex(column, center, center);
     }
   }
 }

@@ -38,11 +38,22 @@
       }
     }
   }
+
+  @include responsive(830px) {
+    margin-top: 5rem;
+    .container {
+      flex-direction: column-reverse;
+      gap: 5rem;
+      img {
+        margin-left: 0rem;
+      }
+    }
+  }
 }
 
 // INTEGRATIONS
 .integrations {
-  margin-bottom: 14rem;
+  margin-bottom: 5rem;
   h2 {
     text-align: center;
     margin-bottom: 8.2rem;
@@ -96,15 +107,21 @@
       }
     }
   }
+
+  @include responsive(830px) {
+    .sides {
+      grid-template-columns: 100%;
+      gap: 10rem;
+    }
+  }
 }
 
 // ROI SECTION
 .roi-section {
   background-color: $brand-blue;
   background-size: cover;
-  height: 70rem;
   color: $brand-white;
-  padding-top: 5rem;
+  padding: 5rem 0;
   margin-bottom: 20rem;
 
   .container {
@@ -124,18 +141,17 @@
 
   .content {
     width: 100%;
-
     position: relative;
+    @include flex(row, space-between, center);
+    gap: 10rem;
     p {
       max-width: 70rem;
     }
 
     .rocket-image {
       width: 100%;
-      max-width: 60rem;
-      position: absolute;
-      right: -10rem;
-      top: -12rem;
+      max-width: 40rem;
+      filter: drop-shadow(1rem 1rem 10rem rgba(#fff, 0.5));
     }
     .shape-five {
       position: absolute;
@@ -146,6 +162,19 @@
       position: absolute;
       left: -40.3rem;
       top: -31.4rem;
+    }
+  }
+
+  @include responsive(1150px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  @include responsive(950px) {
+    margin-bottom: 5rem;
+    .content {
+      @include flex(column, space-between, center);
+      text-align: center;
     }
   }
 }
@@ -214,6 +243,14 @@
       position: absolute;
       bottom: 0;
       right: 0;
+    }
+  }
+
+  @include responsive(1150px) {
+    margin-bottom: 5rem;
+    .container {
+      flex-direction: column;
+      gap: 10rem;
     }
   }
 }

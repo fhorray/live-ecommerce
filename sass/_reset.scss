@@ -16,6 +16,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include responsive(430px) {
+    font-size: 60%;
+  }
 }
 
 img {
@@ -47,7 +51,3 @@ h2 {
     font-weight: 700;
   }
 }
-
-// section {
-//   height: 100vh;
-// }

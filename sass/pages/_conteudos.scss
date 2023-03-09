@@ -11,10 +11,10 @@
     &.reverse {
       flex-direction: row-reverse;
     }
-    .conteudo-item-image {
+    &-image {
       width: 100%;
-      max-width: 65rem;
-      height: 35rem;
+      max-width: 60rem;
+      // height: 35rem;
       object-fit: cover;
     }
 
@@ -70,6 +70,18 @@
           font-size: 2rem;
           margin-bottom: 2.5rem;
         }
+      }
+    }
+  }
+
+  @include responsive(1000px) {
+    .conteudo-item {
+      @include flex(column, space-between, start);
+      &.reverse {
+        flex-direction: column;
+      }
+      &-image {
+        max-width: 100%;
       }
     }
   }

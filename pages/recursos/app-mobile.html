@@ -13,38 +13,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../../css/main.css">
   <title>Recursos Mobile | Live eCommerce</title>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="../index.html">
-        <img class="logo" src="../img/logo-live-ecommerce.png" alt="Logo Live eCommerce">
+      <a href="../../index.html">
+        <img class="logo" src="../../img/logo-live-ecommerce.png" alt="Logo Live eCommerce">
       </a>
 
+      <!-- MENU PRINCIPAL -->
       <nav>
-        <ul>
+        <ul class="js-menu-header">
           <li>
-            <a href="../index.html">Home</a>
+            <a href="../../index.html">Home</a>
           </li>
           <li>
             <a href="../pages/plataforma-de-ecommerce.html">Plataforma de e-commerce</a>
           </li>
           <li>
-            <a href="../pages/recursos.html">Recursos</a>
+            <a href="../../pages/recursos/recursos.html">Recursos</a>
           </li>
           <li>
-            <a href="../pages/conteudos.html">Conteúdos</a>
+            <a href="../../pages/conteudos/conteudos.html">Conteúdos</a>
           </li>
           <li>
-            <a href="../pages/parcerias.html">Parcerias</a>
+            <a href="../../pages/parcerias.html">Parcerias</a>
           </li>
         </ul>
       </nav>
 
-      <a href="#" class="btn btn-primary">Solicitar Demontração</a>
+      <div class="menu-cta">
+        <a href="#" class="btn btn-primary">Solicitar Demontração</a>
+        <img class="menu-hamburguer" src="../../img/menu-hamburguer.svg" alt="Menu Hamburguer">
+      </div>
+    </div>
+
+    <!-- SUBMENU -->
+    <div class="submenu">
+      <!-- RECURSOS -->
+      <nav class="submenu-list submenu-hidden">
+        <ul>
+          <li><a href="./pages/recursos/integracoes.html">Integrações</a></li>
+          <li><a href="./pages/recursos/checkout-express.html">Live Smart Checkout</a></li>
+          <li><a href="./pages/recursos/live-voice.html">Live Voice</a></li>
+          <li><a href="./pages/recursos/app-mobile.html">Live Mobile App</a></li>
+        </ul>
+      </nav>
+
+      <!-- CONTEUDOS -->
+      <nav class="submenu-list submenu-hidden">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./pages/conteudos/checklists.html">Checklists</a></li>
+          <li><a href="./pages/conteudos/ebooks.html">E-books</a></li>
+        </ul>
+      </nav>
+
+
     </div>
   </header>
 
@@ -61,7 +89,7 @@
         </div>
       </div>
 
-      <img class="hero-image" src="../img/hero-image-1.png" alt="Hero Image">
+      <img class="hero-image" src="../../img/hero-image-1.png" alt="Hero Image">
 
     </div>
   </section>
@@ -71,36 +99,35 @@
       <h2>Live Mobile App</h2>
       <p>A ideia do aplicativo é ajudar no fortalecimento da marca e deixar mas fácil o acesso a loja.<br><br> No aplicativo o cliente conseguirá acompanha os status do pedidos e baixar matérias exclusivas. O aplicativo fica disponível a Google Play e Apple Store.</p>
     </div>
-    <img src="../img/pages/resources/mobile-phone.png" alt="Phone Mobile">
+    <img src="../../img/pages/resources/mobile-phone.png" alt="Phone Mobile">
 
     <ul>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>GESTÃO INTEGRADO</span>
       </li>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>LIGUE COM UM CLIQUE</span>
       </li>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>NOTIFICAÇÃO INSTANTÂNEA</span>
       </li>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>LOCALIZAÇÃO POR GPS</span>
       </li>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>PAGAMENTO ONLINE</span>
       </li>
       <li>
-        <img src="../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
+        <img src="../../img/pages/plataforma-de-ecommerce/pos-hero/check-i.svg" alt="Check Icon">
         <span>SISTEMA DE CHAT</span>
       </li>
     </ul>
   </section>
-
 
   <section class="testimonials">
     <div class="container">
@@ -111,13 +138,13 @@
         <li>
           <div class="customer-container">
             <div class="profile">
-              <img src="../img/pages/home/testmonials/customer-1.png" alt="Customer 1">
+              <img src="../../img/pages/home/testmonials/customer-1.png" alt="Customer 1">
               <div class="name-and-store">
                 <h5>Fulano de Tal</h5>
                 <span>Fallen Store</span>
               </div>
             </div>
-            <img class="rating-stars-i" src="../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
+            <img class="rating-stars-i" src="../../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
           </div>
         </li>
@@ -125,13 +152,13 @@
         <li>
           <div class="customer-container">
             <div class="profile">
-              <img src="../img/pages/home/testmonials/customer-2.png" alt="Customer 1">
+              <img src="../../img/pages/home/testmonials/customer-2.png" alt="Customer 1">
               <div class="name-and-store">
                 <h5>Fulano de Tal</h5>
                 <span>Fallen Store</span>
               </div>
             </div>
-            <img class="rating-stars-i" src="../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
+            <img class="rating-stars-i" src="../../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
           </div>
         </li>
@@ -139,13 +166,13 @@
         <li>
           <div class="customer-container">
             <div class="profile">
-              <img src="../img/pages/home/testmonials/customer-3.png" alt="Customer 1">
+              <img src="../../img/pages/home/testmonials/customer-3.png" alt="Customer 1">
               <div class="name-and-store">
                 <h5>Fulano de Tal</h5>
                 <span>Fallen Store</span>
               </div>
             </div>
-            <img class="rating-stars-i" src="../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
+            <img class="rating-stars-i" src="../../img/pages/home/testmonials/ratings.svg" alt="Customer Rating">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
           </div>
         </li>
@@ -204,7 +231,8 @@
     </div>
   </footer>
 
-  <script src="js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../../js/menu.js"></script>
 </body>
 
 </html>

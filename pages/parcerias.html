@@ -24,27 +24,56 @@
         <img class="logo" src="../img/logo-live-ecommerce.png" alt="Logo Live eCommerce">
       </a>
 
+      <!-- MENU PRINCIPAL -->
       <nav>
-        <ul>
+        <ul class="js-menu-header">
           <li>
-            <a href="../index.html">Home</a>
+            <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="../pages/plataforma-de-ecommerce.html">Plataforma de e-commerce</a>
+            <a href="./pages/plataforma-de-ecommerce.html">Plataforma de e-commerce</a>
           </li>
           <li>
-            <a href="../pages/recursos.html">Recursos</a>
+            <a href="./pages/recursos/recursos.html">Recursos</a>
           </li>
           <li>
-            <a href="../pages/conteudos.html">Conteúdos</a>
+            <a href="./pages/conteudos.html">Conteúdos</a>
           </li>
           <li>
-            <a href="../pages/parcerias.html">Parcerias</a>
+            <a href="./pages/parcerias.html">Parcerias</a>
           </li>
         </ul>
       </nav>
 
-      <a href="#" class="btn btn-primary">Solicitar Demontração</a>
+      <div class="menu-cta">
+        <a href="#" class="btn btn-primary">Solicitar Demontração</a>
+        <img class="menu-hamburguer" src="../img/menu-hamburguer.svg" alt="Menu Hamburguer">
+        <!-- <img class="menu-hamburguer" src="./img/close.svg" alt="Menu Hamburguer"> -->
+      </div>
+    </div>
+
+    <!-- SUBMENU -->
+    <div class="submenu">
+      <!-- RECURSOS -->
+      <nav class="submenu-list submenu-hidden">
+        <ul>
+          <li><a href="../pages/recursos/integracoes.html">Integrações</a></li>
+          <li><a href="../pages/recursos/checkout-express.html">Live Smart Checkout</a></li>
+          <li><a href="../pages/recursos/live-voice.html">Live Voice</a></li>
+          <li><a href="../pages/recursos/app-mobile.html">Live Mobile App</a></li>
+        </ul>
+      </nav>
+
+      <!-- CONTEUDOS -->
+      <nav class="submenu-list submenu-hidden">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="../pages/conteudos/checklists.html">Checklists</a></li>
+          <li><a href="../pages/conteudos/ebooks.html">E-books</a></li>
+        </ul>
+      </nav>
+
+
     </div>
   </header>
 
@@ -334,6 +363,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>
