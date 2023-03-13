@@ -555,9 +555,20 @@ footer {
         margin-bottom: 3rem;
       }
 
-      p {
-        margin-bottom: 2rem;
+      ul {
+        li {
+          margin-bottom: 1rem;
+          a {
+            color: $text-gray;
+            font-size: 1.7rem;
+            transition: all 0.2s ease-in;
+            &:hover {
+              color: $brand-blue;
+            }
+          }
+        }
       }
+
       &.social {
         ul {
           @include flex(row, space-between, center);
